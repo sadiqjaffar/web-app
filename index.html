@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style4.css" />
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+    <h3> Admin Login</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <button onclick ="password()">forget password?</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome Admin</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+    <button onclick="next()">Load data</button>
+  </div>
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+  <script>
+ var firebaseConfig = {
+    apiKey: "AIzaSyDLQZ9jW9vbuIOSdrXcy-cD4AWEOj0yuew",
+    authDomain: "sustainability-c1d8b.firebaseapp.com",
+    databaseURL: "https://sustainability-c1d8b-default-rtdb.firebaseio.com",
+    projectId: "sustainability-c1d8b",
+    storageBucket: "sustainability-c1d8b.appspot.com",
+    messagingSenderId: "694654203408",
+    appId: "1:694654203408:web:6cc2d7a8970d144c10bc95",
+    measurementId: "G-FP435ECN9H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
